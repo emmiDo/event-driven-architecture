@@ -29,6 +29,19 @@ Auto create topic:
 Produce data with key and value:
 `.\bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic auto_events --property parse.key=true --property key.separator=:`
 
+Round robin partition:
+`.\bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --producer-property partitioner.class=org.apache.kafka.clients.producer.RoundRobinPartitioner --topic auto_events`
+
+##Consumer side:
+Read messages (instant messages):
+`.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic auto_events`
+
+Consume from the beginning:
+`.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic auto_events --from-beginning`
+
+Consume more info of messages from the beginning:
+`.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic auto_events --property print.timestamp=true --property print.key=true --property print.value=true --from-beginning`
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
