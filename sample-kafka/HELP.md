@@ -4,7 +4,10 @@
 3. Format log directory (only once): `.\bin\windows\kafka-storage.bat format --standalone -t ZjJ6A509SsdasdaZaY7FAS-Q -c config\server.properties`
 4. Start kafka server: `.\bin\windows\kafka-server-start.bat config\server.properties`
 
-# Getting Started
+# Create Kafka topics
+`.\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic order_events`
+
+`.\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic payment_events`
 
 ### Reference Documentation
 For further reference, please consider the following sections:
