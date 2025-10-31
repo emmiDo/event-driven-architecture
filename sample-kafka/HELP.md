@@ -16,6 +16,8 @@ List topics:
 Describe a topic:
 `.\bin\windows\kafka-topics.bat --topic order_events --describe --bootstrap-server localhost:9092`
 
+## Producer side
+
 Producer console:
 `.\bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --topic order_events`
 
