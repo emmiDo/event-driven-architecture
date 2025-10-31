@@ -32,7 +32,7 @@ Produce data with key and value:
 Round robin partition:
 `.\bin\windows\kafka-console-producer.bat --bootstrap-server localhost:9092 --producer-property partitioner.class=org.apache.kafka.clients.producer.RoundRobinPartitioner --topic auto_events`
 
-##Consumer side:
+## Consumer side:
 Read messages (instant messages):
 `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic auto_events`
 
